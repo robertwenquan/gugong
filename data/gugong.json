@@ -8,16 +8,24 @@
     },
     "dynasties": [
         {
-            "name": "Ming Yongle"
+            "name": "Ming Yongle",
+            "year_start": 1320,
+            "year_end": 1424
         },
         {
-            "name": "Ming Jiajin"
+            "name": "Ming Jiajin",
+            "year_start": 1507,
+            "year_end": 1566
         },
         {
-            "name": "Ming General"
+            "name": "Ming General",
+            "year_start": 1368,
+            "year_end": 1644
         },
         {
-            "name": "Qing General"
+            "name": "Qing General",
+            "year_start": 1644,
+            "year_end": 1912
         },
         {
             "name": "Qing Qianlong"
