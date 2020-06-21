@@ -1,0 +1,88 @@
+syntax = "proto3";
+
+package gugong;
+
+enum Orientation {
+    NORTH = 0;
+    WEST = 1;
+    SOUTH = 2;
+    EAST = 3;
+}
+
+enum ArchType {
+    // 门 - Gate
+    MEN = 0;
+    // 殿
+    DIAN = 1;
+    // 亭 - Kiosk
+    TING = 2;
+    // 斋
+    ZHAI = 3;
+    // 宫 - Palace
+    GONG = 4;
+    // 阁
+    GE = 5;
+    // 轩
+    XUAN = 6;
+    // 楼
+    LOU = 7;
+    // 堂
+    TANG = 8;
+    // 馆
+    GUAN = 9;
+    // 桥 - Bridge
+    QIAO = 10;
+    // 花园 - Garden
+    HUAYUAN = 11;
+    // 未定义 - Undefined
+    UNDEFINED = 100;
+}
+
+enum AreaClass {
+    FRONTIER = 0;
+    FRONT_THREE_DIAN = 1;
+    REAR_THREE_PALACES = 2;
+    WENHUA_DIAN = 3;
+    WUYING_DIAN = 4;
+    EAST_6_PALACIES = 5;
+    WEST_6_PALACIES = 6;
+    EMPIRIER_GARDEN = 7;
+    NINGSHOU_PALACE = 8;
+    ZHAI_PALACE = 9;
+    YANG_XIN_DIAN = 10;
+
+}
+
+// 面积
+message Area {
+    float depth = 1;
+    float width = 2;
+    int32 depth_unit = 3;
+    int32 width_unit = 4;
+}
+
+// 地点
+message Place {
+    string id = 1;
+    string name = 2;
+    repeated string other_names = 3;
+    ArchType arch_type = 4;
+}
+
+// 宫
+message Palace {
+    string id = 1;
+    string name = 2;
+}
+
+// 门
+message Gate {
+    string id = 1;
+    string name = 2;
+}
+
+// 亭
+message Kiosk {
+    string id = 1;
+    string name = 2;
+}
