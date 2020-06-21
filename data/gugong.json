@@ -1,0 +1,134 @@
+{
+    "name": "Gu Gong",
+    "also_known_as": "The Forbidden City",
+    "geometry": {
+        "orientation": "north-south",
+        "length": "961m",
+        "width": "753m"
+    },
+    "dynasties": [
+        {
+            "name": "Ming Yongle"
+        },
+        {
+            "name": "Ming Jiajin"
+        },
+        {
+            "name": "Ming General"
+        },
+        {
+            "name": "Qing General"
+        },
+        {
+            "name": "Qing Qianlong"
+        },
+        {
+            "name": "Qing Guangxu"
+        }
+    ],
+    "architecture": {
+        "external_gates": [
+            {
+                "name": "午门",
+                "pinyin": "Wu Men",
+                "name_en": "Wu Gate",
+                "facing": "south",
+                "dynasty": "Ming Yongle"
+            },
+            {
+                "name": "神武门",
+                "pinyin": "Shen Wu Men",
+                "name_en": "Shen Wu Gate",
+                "facing": "north",
+                "dynasty": "Ming Yongle"
+            },
+            {
+                "name": "东华门",
+                "pinyin": "Dong Hua Men",
+                "name_en": "East Hua Gate",
+                "facing": "east",
+                "dynasty": "Ming Yongle"
+            },
+            {
+                "name": "西华门",
+                "pinyin": "Xi Hua Men",
+                "name_en": "West Hua Gate",
+                "facing": "west",
+                "dynasty": "Ming Yongle",
+                "note": "Staff Use Only"
+            }
+        ],
+        "gates": [
+            {
+                "name": "太和门",
+                "pinyin": "Tai He Men",
+                "name_en": "Tai He Gate",
+                "dynasty": "Qing Guangxu"
+            },
+            {
+                "name": "熙和门",
+                "pinyin": "Xi He Men",
+                "name_en": "Xi He Gate",
+                "dynasty": "Ming Yongle"
+            },
+            {
+                "name": "协和门"
+            },
+            {
+                "name": "乾清门"
+            },
+            {
+                "name": "景运门"
+            },
+            {
+                "name": "隆宗门"
+            },
+            {
+                "name": "坤宁门"
+            },
+            {
+                "name": "天一门"
+            },
+            {
+                "name": "顺贞门"
+            },
+            {
+                "name": "麟趾门"
+            },
+            {
+                "name": "苍震门"
+            },
+            {
+                "name": "螽斯门"
+            },
+            {
+                "name": "锡庆门"
+            },
+            {
+                "name": "皇极门"
+            },
+            {
+                "name": "宁寿门"
+            },
+            {
+                "name": "慈宁门"
+            },
+            {
+                "name": "慈宁门"
+            }
+        ],
+        "palaces": []
+    },
+    "references": [
+        {
+            "id": 1,
+            "name": "",
+            "link": "https://www.dpm.org.cn/Home.html"
+        },
+        {
+            "id": 2,
+            "name": "",
+            "link": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E6%95%85%E5%AE%AB/345415"
+        }
+    ]
+}
