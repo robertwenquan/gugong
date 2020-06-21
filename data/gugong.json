@@ -30,43 +30,30 @@
         "gates": [
             {
                 "name": "午门",
-                "pinyin": "Wu Men",
-                "name_en": "Wu Gate",
-                "facing": "south",
+                "orientation": "south",
                 "dynasty": "Ming Yongle"
             },
             {
                 "name": "神武门",
-                "pinyin": "Shen Wu Men",
-                "name_en": "Shen Wu Gate",
-                "facing": "north",
+                "orientation": "north",
                 "dynasty": "Ming Yongle"
             },
             {
                 "name": "东华门",
-                "pinyin": "Dong Hua Men",
-                "name_en": "East Hua Gate",
-                "facing": "east",
+                "orientation": "east",
                 "dynasty": "Ming Yongle"
             },
             {
                 "name": "西华门",
-                "pinyin": "Xi Hua Men",
-                "name_en": "West Hua Gate",
-                "facing": "west",
-                "dynasty": "Ming Yongle",
-                "note": "Staff Use Only"
+                "orientation": "west",
+                "dynasty": "Ming Yongle"
             },
             {
                 "name": "太和门",
-                "pinyin": "Tai He Men",
-                "name_en": "Tai He Gate",
                 "dynasty": "Qing Guangxu"
             },
             {
                 "name": "熙和门",
-                "pinyin": "Xi He Men",
-                "name_en": "Xi He Gate",
                 "dynasty": "Ming Yongle"
             },
             {
@@ -117,34 +104,22 @@
         ],
         "halls": [
             {
-                "name": "太和殿",
-                "pinyin": "Tai He Dian",
-                "name_en": "Tai He Palace"
+                "name": "太和殿"
             },
             {
-                "name": "中和殿",
-                "pinyin": "Zhong He Dian",
-                "name_en": "Zhong He Palace"
+                "name": "中和殿"
             },
             {
-                "name": "保和殿",
-                "pinyin": "Bao He Dian",
-                "name_en": "Bao He Palace"
+                "name": "保和殿"
             },
             {
-                "name": "保和殿",
-                "pinyin": "Bao He Dian",
-                "name_en": "Bao He Palace"
+                "name": "保和殿"
             },
             {
-                "name": "文华殿",
-                "pinyin": "Wen Hua Dian",
-                "name_en": "Wen Hua Palace"
+                "name": "文华殿"
             },
             {
-                "name": "武英殿",
-                "pinyin": "Wu Ying Dian",
-                "name_en": "Wu Ying Palace"
+                "name": "武英殿"
             },
             {
                 "name": "交泰殿"
