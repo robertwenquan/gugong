@@ -2,13 +2,16 @@ syntax = "proto3";
 
 package gugong;
 
+// 朝向
 enum Orientation {
     NORTH = 0;
     WEST = 1;
     SOUTH = 2;
     EAST = 3;
+    UNDEFINED_ORIENTATION = 100;
 }
 
+// 建筑类型
 enum ArchType {
     // 门 - Gate
     MEN = 0;
@@ -35,10 +38,11 @@ enum ArchType {
     // 花园 - Garden
     HUAYUAN = 11;
     // 未定义 - Undefined
-    UNDEFINED = 100;
+    UNDEFINED_ARCH_TYPE = 100;
 }
 
-enum AreaClass {
+// 区域
+enum Section {
     FRONTIER = 0;
     FRONT_THREE_DIAN = 1;
     REAR_THREE_PALACES = 2;
@@ -50,7 +54,18 @@ enum AreaClass {
     NINGSHOU_PALACE = 8;
     ZHAI_PALACE = 9;
     YANG_XIN_DIAN = 10;
+}
 
+// 朝代
+enum Dynasty {
+    MING = 0;
+    QING = 1;
+}
+
+// 皇帝
+enum Empire {
+    EP_QING_QIANLONG = 0;
+    EP_QING_GUANGXU = 12;
 }
 
 // 面积
@@ -67,6 +82,9 @@ message Place {
     string name = 2;
     repeated string other_names = 3;
     ArchType arch_type = 4;
+    Orientation orientation = 5;
+    Section section = 6;
+    Area area = 7;
 }
 
 // 宫

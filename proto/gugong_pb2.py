@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0cgugong.proto\x12\x06gugong\"L\n\x04\x41rea\x12\r\n\x05\x64\x65pth\x18\x01 \x01(\x02\x12\r\n\x05width\x18\x02 \x01(\x02\x12\x12\n\ndepth_unit\x18\x03 \x01(\x05\x12\x12\n\nwidth_unit\x18\x04 \x01(\x05\"[\n\x05Place\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0bother_names\x18\x03 \x03(\t\x12#\n\tarch_type\x18\x04 \x01(\x0e\x32\x10.gugong.ArchType\"\"\n\x06Palace\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\" \n\x04Gate\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"!\n\x05Kiosk\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t*7\n\x0bOrientation\x12\t\n\x05NORTH\x10\x00\x12\x08\n\x04WEST\x10\x01\x12\t\n\x05SOUTH\x10\x02\x12\x08\n\x04\x45\x41ST\x10\x03*\x90\x01\n\x08\x41rchType\x12\x07\n\x03MEN\x10\x00\x12\x08\n\x04\x44IAN\x10\x01\x12\x08\n\x04TING\x10\x02\x12\x08\n\x04ZHAI\x10\x03\x12\x08\n\x04GONG\x10\x04\x12\x06\n\x02GE\x10\x05\x12\x08\n\x04XUAN\x10\x06\x12\x07\n\x03LOU\x10\x07\x12\x08\n\x04TANG\x10\x08\x12\x08\n\x04GUAN\x10\t\x12\x08\n\x04QIAO\x10\n\x12\x0b\n\x07HUAYUAN\x10\x0b\x12\r\n\tUNDEFINED\x10\x64*\xe1\x01\n\tAreaClass\x12\x0c\n\x08\x46RONTIER\x10\x00\x12\x14\n\x10\x46RONT_THREE_DIAN\x10\x01\x12\x16\n\x12REAR_THREE_PALACES\x10\x02\x12\x0f\n\x0bWENHUA_DIAN\x10\x03\x12\x0f\n\x0bWUYING_DIAN\x10\x04\x12\x13\n\x0f\x45\x41ST_6_PALACIES\x10\x05\x12\x13\n\x0fWEST_6_PALACIES\x10\x06\x12\x13\n\x0f\x45MPIRIER_GARDEN\x10\x07\x12\x13\n\x0fNINGSHOU_PALACE\x10\x08\x12\x0f\n\x0bZHAI_PALACE\x10\t\x12\x11\n\rYANG_XIN_DIAN\x10\nb\x06proto3'
+  serialized_pb=b'\n\x0cgugong.proto\x12\x06gugong\"L\n\x04\x41rea\x12\r\n\x05\x64\x65pth\x18\x01 \x01(\x02\x12\r\n\x05width\x18\x02 \x01(\x02\x12\x12\n\ndepth_unit\x18\x03 \x01(\x05\x12\x12\n\nwidth_unit\x18\x04 \x01(\x05\"\xc3\x01\n\x05Place\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x13\n\x0bother_names\x18\x03 \x03(\t\x12#\n\tarch_type\x18\x04 \x01(\x0e\x32\x10.gugong.ArchType\x12(\n\x0borientation\x18\x05 \x01(\x0e\x32\x13.gugong.Orientation\x12 \n\x07section\x18\x06 \x01(\x0e\x32\x0f.gugong.Section\x12\x1a\n\x04\x61rea\x18\x07 \x01(\x0b\x32\x0c.gugong.Area\"\"\n\x06Palace\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\" \n\x04Gate\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\"!\n\x05Kiosk\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t*R\n\x0bOrientation\x12\t\n\x05NORTH\x10\x00\x12\x08\n\x04WEST\x10\x01\x12\t\n\x05SOUTH\x10\x02\x12\x08\n\x04\x45\x41ST\x10\x03\x12\x19\n\x15UNDEFINED_ORIENTATION\x10\x64*\x9a\x01\n\x08\x41rchType\x12\x07\n\x03MEN\x10\x00\x12\x08\n\x04\x44IAN\x10\x01\x12\x08\n\x04TING\x10\x02\x12\x08\n\x04ZHAI\x10\x03\x12\x08\n\x04GONG\x10\x04\x12\x06\n\x02GE\x10\x05\x12\x08\n\x04XUAN\x10\x06\x12\x07\n\x03LOU\x10\x07\x12\x08\n\x04TANG\x10\x08\x12\x08\n\x04GUAN\x10\t\x12\x08\n\x04QIAO\x10\n\x12\x0b\n\x07HUAYUAN\x10\x0b\x12\x17\n\x13UNDEFINED_ARCH_TYPE\x10\x64*\xdf\x01\n\x07Section\x12\x0c\n\x08\x46RONTIER\x10\x00\x12\x14\n\x10\x46RONT_THREE_DIAN\x10\x01\x12\x16\n\x12REAR_THREE_PALACES\x10\x02\x12\x0f\n\x0bWENHUA_DIAN\x10\x03\x12\x0f\n\x0bWUYING_DIAN\x10\x04\x12\x13\n\x0f\x45\x41ST_6_PALACIES\x10\x05\x12\x13\n\x0fWEST_6_PALACIES\x10\x06\x12\x13\n\x0f\x45MPIRIER_GARDEN\x10\x07\x12\x13\n\x0fNINGSHOU_PALACE\x10\x08\x12\x0f\n\x0bZHAI_PALACE\x10\t\x12\x11\n\rYANG_XIN_DIAN\x10\n*\x1d\n\x07\x44ynasty\x12\x08\n\x04MING\x10\x00\x12\x08\n\x04QING\x10\x01*3\n\x06\x45mpire\x12\x14\n\x10\x45P_QING_QIANLONG\x10\x00\x12\x13\n\x0f\x45P_QING_GUANGXU\x10\x0c\x62\x06proto3'
 )
 
 _ORIENTATION = _descriptor.EnumDescriptor(
@@ -50,11 +50,16 @@ _ORIENTATION = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='UNDEFINED_ORIENTATION', index=4, number=100,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=300,
-  serialized_end=355,
+  serialized_start=405,
+  serialized_end=487,
 )
 _sym_db.RegisterEnumDescriptor(_ORIENTATION)
 
@@ -127,22 +132,22 @@ _ARCHTYPE = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='UNDEFINED', index=12, number=100,
+      name='UNDEFINED_ARCH_TYPE', index=12, number=100,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=358,
-  serialized_end=502,
+  serialized_start=490,
+  serialized_end=644,
 )
 _sym_db.RegisterEnumDescriptor(_ARCHTYPE)
 
 ArchType = enum_type_wrapper.EnumTypeWrapper(_ARCHTYPE)
-_AREACLASS = _descriptor.EnumDescriptor(
-  name='AreaClass',
-  full_name='gugong.AreaClass',
+_SECTION = _descriptor.EnumDescriptor(
+  name='Section',
+  full_name='gugong.Section',
   filename=None,
   file=DESCRIPTOR,
   create_key=_descriptor._internal_create_key,
@@ -205,16 +210,69 @@ _AREACLASS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=505,
-  serialized_end=730,
+  serialized_start=647,
+  serialized_end=870,
 )
-_sym_db.RegisterEnumDescriptor(_AREACLASS)
+_sym_db.RegisterEnumDescriptor(_SECTION)
 
-AreaClass = enum_type_wrapper.EnumTypeWrapper(_AREACLASS)
+Section = enum_type_wrapper.EnumTypeWrapper(_SECTION)
+_DYNASTY = _descriptor.EnumDescriptor(
+  name='Dynasty',
+  full_name='gugong.Dynasty',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='MING', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='QING', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=872,
+  serialized_end=901,
+)
+_sym_db.RegisterEnumDescriptor(_DYNASTY)
+
+Dynasty = enum_type_wrapper.EnumTypeWrapper(_DYNASTY)
+_EMPIRE = _descriptor.EnumDescriptor(
+  name='Empire',
+  full_name='gugong.Empire',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='EP_QING_QIANLONG', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='EP_QING_GUANGXU', index=1, number=12,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=903,
+  serialized_end=954,
+)
+_sym_db.RegisterEnumDescriptor(_EMPIRE)
+
+Empire = enum_type_wrapper.EnumTypeWrapper(_EMPIRE)
 NORTH = 0
 WEST = 1
 SOUTH = 2
 EAST = 3
+UNDEFINED_ORIENTATION = 100
 MEN = 0
 DIAN = 1
 TING = 2
@@ -227,7 +285,7 @@ TANG = 8
 GUAN = 9
 QIAO = 10
 HUAYUAN = 11
-UNDEFINED = 100
+UNDEFINED_ARCH_TYPE = 100
 FRONTIER = 0
 FRONT_THREE_DIAN = 1
 REAR_THREE_PALACES = 2
@@ -239,6 +297,10 @@ EMPIRIER_GARDEN = 7
 NINGSHOU_PALACE = 8
 ZHAI_PALACE = 9
 YANG_XIN_DIAN = 10
+MING = 0
+QING = 1
+EP_QING_QIANLONG = 0
+EP_QING_GUANGXU = 12
 
 
 
@@ -331,6 +393,27 @@ _PLACE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='orientation', full_name='gugong.Place.orientation', index=4,
+      number=5, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='section', full_name='gugong.Place.section', index=5,
+      number=6, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='area', full_name='gugong.Place.area', index=6,
+      number=7, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -343,8 +426,8 @@ _PLACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=102,
-  serialized_end=193,
+  serialized_start=103,
+  serialized_end=298,
 )
 
 
@@ -382,8 +465,8 @@ _PALACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=195,
-  serialized_end=229,
+  serialized_start=300,
+  serialized_end=334,
 )
 
 
@@ -421,8 +504,8 @@ _GATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=231,
-  serialized_end=263,
+  serialized_start=336,
+  serialized_end=368,
 )
 
 
@@ -460,11 +543,14 @@ _KIOSK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=265,
-  serialized_end=298,
+  serialized_start=370,
+  serialized_end=403,
 )
 
 _PLACE.fields_by_name['arch_type'].enum_type = _ARCHTYPE
+_PLACE.fields_by_name['orientation'].enum_type = _ORIENTATION
+_PLACE.fields_by_name['section'].enum_type = _SECTION
+_PLACE.fields_by_name['area'].message_type = _AREA
 DESCRIPTOR.message_types_by_name['Area'] = _AREA
 DESCRIPTOR.message_types_by_name['Place'] = _PLACE
 DESCRIPTOR.message_types_by_name['Palace'] = _PALACE
@@ -472,7 +558,9 @@ DESCRIPTOR.message_types_by_name['Gate'] = _GATE
 DESCRIPTOR.message_types_by_name['Kiosk'] = _KIOSK
 DESCRIPTOR.enum_types_by_name['Orientation'] = _ORIENTATION
 DESCRIPTOR.enum_types_by_name['ArchType'] = _ARCHTYPE
-DESCRIPTOR.enum_types_by_name['AreaClass'] = _AREACLASS
+DESCRIPTOR.enum_types_by_name['Section'] = _SECTION
+DESCRIPTOR.enum_types_by_name['Dynasty'] = _DYNASTY
+DESCRIPTOR.enum_types_by_name['Empire'] = _EMPIRE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Area = _reflection.GeneratedProtocolMessageType('Area', (_message.Message,), {
