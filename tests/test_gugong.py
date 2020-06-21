@@ -14,13 +14,13 @@ def test_protos():
     assert place.other_names[1] == "ccc"
     assert place.arch_type == ggpb.DIAN
 
-def test_data():
+def test_data_integrity():
+    # load the raw data first
     with open("data/gugong.json", "r") as fp:
         data = fp.read()
-        print (len(data))
-        #data_parsed = json.loads(data)
+        data_parsed = json.loads(data)
 
-def test_data_integrity():
+    # verify data integrity after loading
     gg = GuGong()
     assert (len(gg.places) > 0)
     for place in gg.places:
