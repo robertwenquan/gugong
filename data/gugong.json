@@ -27,7 +27,7 @@
         }
     ],
     "architecture": {
-        "external_gates": [
+        "gates": [
             {
                 "name": "午门",
                 "pinyin": "Wu Men",
@@ -56,9 +56,7 @@
                 "facing": "west",
                 "dynasty": "Ming Yongle",
                 "note": "Staff Use Only"
-            }
-        ],
-        "gates": [
+            },
             {
                 "name": "太和门",
                 "pinyin": "Tai He Men",
