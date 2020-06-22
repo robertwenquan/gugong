@@ -1,7 +1,7 @@
 import os
 import json
 from gugong import GuGong
-from proto import gugong_pb2 as ggpb
+from gugong.proto import gugong_pb2 as ggpb
 
 def test_init():
     gg = GuGong()
@@ -44,3 +44,12 @@ def test_data_integrity():
         elif place.arch_type == ggpb.LOU:
             assert (place.name.endswith('楼'))
         
+def test_history_integrity():
+    # verify if the data checks with simple historic facts
+    gg = GuGong()
+
+    empires = gg.empires
+    for empire in empires:
+        print(empire.name)
+    assert (len(empires) == 24)
+
