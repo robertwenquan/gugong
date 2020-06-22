@@ -1,38 +1,64 @@
 {
-    "name": "Gu Gong",
-    "other_names": ["The Forbidden City", "The Palace Museum"],
-    "geometry": {
-        "orientation": "south",
-        "length": "961",
-        "width": "753",
-        "metric": "meter"
+    "profile": {
+        "name": "故宫",
+        "other_names": [
+            "紫禁城",
+            "The Palace Museum",
+            "The Forbidden City"
+        ],
+        "history": {
+            "built_start": 1406,
+            "built": 1420
+        },
+        "geometry": {
+            "orientation": "south",
+            "length": "961",
+            "width": "753",
+            "metric": "meter"
+        },
+        "location": {
+            "country": "China",
+            "city": "Beijing",
+            "latitude": "N 116-23'26.93''",
+            "longitude": "E 39-54'56.92''"
+        }
     },
-    "dynasties": [
+    "architecture_types": [
         {
-            "name": "Ming Yongle",
-            "year_start": 1320,
-            "year_end": 1424
+            "name": "门"
         },
         {
-            "name": "Ming Jiajin",
-            "year_start": 1507,
-            "year_end": 1566
+            "name": "殿"
         },
         {
-            "name": "Ming General",
-            "year_start": 1368,
-            "year_end": 1644
+            "name": "亭"
         },
         {
-            "name": "Qing General",
-            "year_start": 1644,
-            "year_end": 1912
+            "name": "阁"
         },
         {
-            "name": "Qing Qianlong"
+            "name": "宫"
         },
         {
-            "name": "Qing Guangxu"
+            "name": "桥"
+        },
+        {
+            "name": "楼"
+        },
+        {
+            "name": "堂"
+        },
+        {
+            "name": "轩"
+        },
+        {
+            "name": "斋"
+        },
+        {
+            "name": "花园"
+        },
+        {
+            "name": "馆"
         }
     ],
     "places": [
@@ -423,6 +449,11 @@
         },
         {
             "id": 2,
+            "name": "website of Gugong in English",
+            "link": "https://en.dpm.org.cn"
+        },
+        {
+            "id": 3,
             "name": "",
             "link": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E6%95%85%E5%AE%AB/345415"
         }
