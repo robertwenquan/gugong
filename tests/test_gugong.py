@@ -1,3 +1,4 @@
+import os
 import json
 from gugong import GuGong
 from proto import gugong_pb2 as ggpb
@@ -15,11 +16,6 @@ def test_protos():
     assert place.arch_type == ggpb.DIAN
 
 def test_data_integrity():
-    # load the raw data first
-    with open("data/gugong.json", "r") as fp:
-        data = fp.read()
-        data_parsed = json.loads(data)
-
     # verify data integrity after loading
     gg = GuGong()
     assert (len(gg.places) > 0)

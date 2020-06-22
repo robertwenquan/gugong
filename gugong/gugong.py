@@ -4,18 +4,12 @@
 # gugong
 #
 
+import os
 import json
 import time
 import random
-from proto import gugong_pb2 as ggpb
-
-class Place(object):
-    pass
-
-class Palace(Place):
-
-    def __init__(self):
-        super().__init__()
+import pypinyin
+from .proto import gugong_pb2 as ggpb
 
 class GuGong(object):
 
@@ -27,6 +21,9 @@ class GuGong(object):
 
     # a list of places in Gugong
     places = []
+
+    cwd, _ = os.path.split(__file__)
+    DATA_PATH = os.path.join(cwd, "data", "gugong.json")
 
     def __init__(self):
         super().__init__();
@@ -68,7 +65,7 @@ class GuGong(object):
             }.get(orientation_string, ggpb.UNDEFINED_ORIENTATION)
 
         data_parsed = None
-        with open("data/gugong.json", "r") as fd:
+        with open(self.DATA_PATH, "r") as fd:
             data = fd.read()
             data_parsed = json.loads(data)
 
@@ -90,8 +87,11 @@ class GuGong(object):
         return {
             '你是谁？': '我是你的故宫小帮手。',
             '故宫什么时候成立的': '故宫是xxxx成立的。',
-            '故宫有多大': '故宫长900多米，宽700多米。',
+            '故宫有多大': '故宫长961多米，宽753多米。',
             '故宫里有御猫吗': '你去找找看？',
+            '城门': '紫禁城有四座城门，南面为午门，北面为神武门，东面为东华门，西面为西华门。',
+            '外朝': '外朝的中心为太和殿、中和殿、保和殿，统称三大殿',
+            '内廷': '乾清宫、交泰殿、坤宁宫，统称后三宫',
             '故宫的入口在哪里？': '故宫目前只能从东华门进入。',
             '故宫里有餐厅么？': '故宫里有简餐，冰窖提供简餐。'
         }.get(question, '对不起，你的问题太难了。我暂时还帮不了你:(')
@@ -110,11 +110,12 @@ class GuGong(object):
 
         return self.get_faq_answer(question)
 
+    def du(self, query):
+        return pypinyin.pinyin(query)
 
 def main():
     gugong = GuGong()
-    print(gugong.ask('故宫有多大?'))
+    print(gugong.name)
 
 if __name__ == "__main__":
     main()
-
