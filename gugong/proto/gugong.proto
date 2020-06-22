@@ -57,13 +57,13 @@ enum Section {
 }
 
 // 朝代
-enum Dynasty {
+enum enumDynasty {
     MING = 0;
     QING = 1;
 }
 
 // 皇帝
-enum Empire {
+enum enumEmpire {
     EP_QING_QIANLONG = 0;
     EP_QING_GUANGXU = 12;
 }
@@ -76,13 +76,30 @@ message Area {
     int32 width_unit = 4;
 }
 
+// 皇帝
+message Empire {
+    string id = 1;
+    // 姓名
+    string name = 2;
+    // 朝代
+    enumDynasty dynasty = 3;
+    // 年号
+    string epoch_name = 4;
+    // 庙号
+    string temple_name = 5;
+}
+
 // 地点
 message Place {
     string id = 1;
     string name = 2;
+    // 其它名称
     repeated string other_names = 3;
+    // 建筑类型
     ArchType arch_type = 4;
+    // 正门朝向
     Orientation orientation = 5;
+    // 区域
     Section section = 6;
     Area area = 7;
 }
