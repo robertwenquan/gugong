@@ -3,7 +3,7 @@
 `gugong` is an accessible data library for The Fobidden City located in Beijing, China. 
 The location of The Forbidden City is now called The Palace Museum.
 
-While "The Fobidden City" might be more commonly known from the western world, the other name "GuGong", or literally translated as "Obsolete Palace", is more commonly used domestically in China. It's a shorter two-character-term "故宫" than the 3-character-term "紫禁城". The other possible reason might be today it's called "The Palace Museum", with the Chinese name as "故宫博物院". So it's just easy to call the first part of the name ommitting the word "musuem".
+While "The Fobidden City" might be more commonly known from the western world, the other name "GuGong", or literally translated as "The Past Palace", is more commonly used domestically in China. It's a shorter two-character-term "故宫" than the 3-character-term "紫禁城". The other possible reason might be today it's called "The Palace Museum", with the Chinese name as "故宫博物院". So it's just easy to call the first part of the name ommitting the word "musuem".
 
 This library is built with historic facts and grounds collected from various open resources. It could be used as learning and educational purposes.
 
