@@ -99,6 +99,31 @@ class GuGong(object):
 
             self.empires.append(emp)
 
+    def _get_arch_type(self, arch_type):
+        rets = []
+        for place in self.places:
+            if place.arch_type == arch_type:
+                rets.append(place)
+        return rets
+
+    def get_gates(self):
+        """
+        get a list of gate as response
+        """
+        return self._get_arch_type(ggpb.MEN)
+
+    def get_palaces(self):
+        """
+        get a list of palace as response
+        """
+        return self._get_arch_type(ggpb.GONG)
+
+    def get_kiosks(self):
+        """
+        get a list of kiosk as response
+        """
+        return self._get_arch_type(ggpb.TING)
+
     def get_faq_answer(self, question):
         return {
             '你是谁？': '我是你的故宫小帮手。',
