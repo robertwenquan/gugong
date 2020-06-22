@@ -22,13 +22,17 @@ class GuGong(object):
     # a list of places in Gugong
     places = []
 
+    # a list of empires that lived at GuGong
+    empires = []
+
     cwd, _ = os.path.split(__file__)
     DATA_PATH = os.path.join(cwd, "data", "gugong.json")
 
     def __init__(self):
         super().__init__();
 
-        self.load_data()
+        if not self.profile and not self.places:
+            self.load_data()
     
     # load the data into the main object
     def load_data(self):
@@ -83,6 +87,18 @@ class GuGong(object):
 
             self.places.append(p)
 
+        empires = data_parsed['empires']
+        for empire in empires:
+            emp = ggpb.Empire(name=empire['name'])
+
+            if empire.get('epoch_name'):
+                emp.epoch_name = empire['epoch_name']
+
+            if empire.get('temple_name'):
+                emp.temple_name = empire['temple_name']
+
+            self.empires.append(emp)
+
     def get_faq_answer(self, question):
         return {
             '你是谁？': '我是你的故宫小帮手。',
@@ -112,10 +128,3 @@ class GuGong(object):
 
     def du(self, query):
         return pypinyin.pinyin(query)
-
-def main():
-    gugong = GuGong()
-    print(gugong.name)
-
-if __name__ == "__main__":
-    main()
