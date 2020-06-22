@@ -1,2 +1,2 @@
-# forbidden-city
-a data schema and accessible library for The Forbidden City
+# gugong
+a data schema and accessible library for The Palace Musuem in Beijing
