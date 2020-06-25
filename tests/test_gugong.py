@@ -2,7 +2,6 @@ import os
 import json
 from gugong import GuGong
 from gugong.proto import gugong_pb2 as ggpb
-from gugong.dtype import Place, Gong, Dian
 
 def test_init():
     gg = GuGong()
@@ -15,16 +14,6 @@ def test_protos():
     assert place.other_names[0] == "bbb"
     assert place.other_names[1] == "ccc"
     assert place.arch_type == ggpb.DIAN
-
-def test_classes():
-    p = Place()
-    assert(p.arch_type is None)
-
-    g = Gong()
-    assert(g.arch_type == "GONG")
-
-    d = Dian()
-    assert(d.arch_type == "DIAN")
 
 def test_data_integrity():
     # verify data integrity after loading
