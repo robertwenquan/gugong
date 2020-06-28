@@ -19,8 +19,8 @@ db = SqliteDatabase(':memory:')
 
 
 class ArchType(Model):
-    id = IntegerField()
-    name = CharField(index=True)
+    id = AutoField()
+    name = CharField()
 
     class Meta:
         database = db
@@ -61,23 +61,35 @@ def _map_arch_type(arch_type_string):
     return {
         'bridge': ggpb.QIAO,
         'qiao': ggpb.QIAO,
+        '桥': ggpb.QIAO,
         'garden': ggpb.HUAYUAN,
         'huayuan': ggpb.HUAYUAN,
+        '花园': ggpb.HUAYUAN,
         'gate': ggpb.MEN,
         'men': ggpb.MEN,
+        '门': ggpb.MEN,
         'guan': ggpb.GUAN,
+        '馆': ggpb.GUAN,
         'hall': ggpb.DIAN,
         'dian': ggpb.DIAN,
+        '殿': ggpb.DIAN,
         'kiosk': ggpb.TING,
         'ting': ggpb.TING,
+        '亭': ggpb.TING,
         'lou': ggpb.LOU,
+        '楼': ggpb.LOU,
         'palace': ggpb.GONG,
         'gong': ggpb.GONG,
+        '宫': ggpb.GONG,
         'pavilion': ggpb.GE,
         'ge': ggpb.GE,
+        '阁': ggpb.GE,
         'tang': ggpb.TANG,
+        '堂': ggpb.TANG,
         'xuan': ggpb.XUAN,
-        'zhai': ggpb.ZHAI
+        '轩': ggpb.XUAN,
+        'zhai': ggpb.ZHAI,
+        '斋': ggpb.ZHAI
     }.get(arch_type_string, ggpb.UNDEFINED_ARCH_TYPE)
 
 
@@ -91,23 +103,21 @@ def _map_orientation(orientation_string):
 
 
 def _init_arch_type():
-    arch_type_list = {
-        'bridge': ggpb.QIAO,
-        'garden': ggpb.HUAYUAN,
-        'gate': ggpb.MEN,
-        'guan': ggpb.GUAN,
-        'hall': ggpb.DIAN,
-        'kiosk': ggpb.TING,
-        'lou': ggpb.LOU,
-        'palace': ggpb.GONG,
-        'pavilion': ggpb.GE,
-        'tang': ggpb.TANG,
-        'xuan': ggpb.XUAN,
-        'zhai': ggpb.ZHAI
-    }
 
-    for (arch_name, arch_id) in arch_type_list.items():
-        at = ArchType(id=arch_id, name=arch_name)
+    cwd, _ = os.path.split(__file__)
+    DATA_PATH = os.path.join(cwd, "..", "data", "gugong.json")
+
+    data_parsed = None
+    with open(DATA_PATH, "r") as fd:
+        data = fd.read()
+        data_parsed = json.loads(data)
+
+    if data_parsed is None:
+        raise Exception("Data Parsing Error!!")
+
+    arch_types = data_parsed['architecture_types']
+    for arch_type in arch_types:
+        at = ArchType(name=arch_type['name'])
         at.save()
 
 

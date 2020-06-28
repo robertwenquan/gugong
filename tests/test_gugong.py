@@ -21,8 +21,8 @@ def test_data_models():
     db.init_db()
 
     # test arch_type table
-    #arch_types = db.ArchType.select()
-    #assert len(arch_types) > 0
+    arch_types = db.ArchType.select()
+    assert len(arch_types) > 0
 
     # test place table
     places = db.Place.select()

@@ -92,6 +92,7 @@ message Empire {
 // 地点
 message Place {
     string id = 1;
+    // 名称
     string name = 2;
     // 其它名称
     repeated string other_names = 3;
