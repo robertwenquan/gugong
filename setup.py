@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="gugong-saphires", # Replace with your own username
-    version="0.5.0",
+    version="0.5.2",
     author="Robert Wen",
     author_email="saphires@163.com",
     description="Data library for GuGong, a.k.a as The Palace Museum or The Fobidden City",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/robertwenquan/gugong",
     packages=['gugong'],
     package_dir={'gugong': 'gugong'},
-    package_data={'gugong': ['data/gugong.json', 'proto/*.py']},
+    package_data={'gugong': ['data/gugong.json', 'proto/*.py', 'models/*.py']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
