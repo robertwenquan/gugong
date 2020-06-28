@@ -2,6 +2,7 @@ import os
 import json
 from gugong import GuGong
 from gugong.proto import gugong_pb2 as ggpb
+from gugong.models import db
 
 def test_init():
     gg = GuGong()
@@ -14,6 +15,24 @@ def test_protos():
     assert place.other_names[0] == "bbb"
     assert place.other_names[1] == "ccc"
     assert place.arch_type == ggpb.DIAN
+
+def test_data_models():
+    # test the data models
+    db.init_db()
+
+    # test arch_type table
+    #arch_types = db.ArchType.select()
+    #assert len(arch_types) > 0
+
+    # test place table
+    places = db.Place.select()
+    assert len(places) > 0
+
+    # test empire table
+    empires = db.Empire.select().where(db.Empire.dynasty == 'QING')
+    assert len(empires) > 0
+    for empire in empires:
+        assert empire.dynasty == 'QING'
 
 def test_data_integrity():
     # verify data integrity after loading
@@ -43,13 +62,10 @@ def test_data_integrity():
             assert (place.name.endswith('馆'))
         elif place.arch_type == ggpb.LOU:
             assert (place.name.endswith('楼'))
-        
+ 
 def test_history_integrity():
     # verify if the data checks with simple historic facts
     gg = GuGong()
 
     empires = gg.empires
-    for empire in empires:
-        print(empire.name)
     assert (len(empires) == 24)
-

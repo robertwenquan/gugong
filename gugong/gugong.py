@@ -4,12 +4,11 @@
 # gugong
 #
 
-import os
-import json
 import time
 import random
 import pypinyin
 from .proto import gugong_pb2 as ggpb
+from .models.db import init_db, get_places, get_empires
 
 class GuGong(object):
 
@@ -25,9 +24,6 @@ class GuGong(object):
     # a list of empires that lived at GuGong
     empires = []
 
-    cwd, _ = os.path.split(__file__)
-    DATA_PATH = os.path.join(cwd, "data", "gugong.json")
-
     def __init__(self):
         super().__init__();
 
@@ -36,68 +32,10 @@ class GuGong(object):
     
     # load the data into the main object
     def load_data(self):
+        init_db()
 
-        def map_arch_type(arch_type_string):
-            return {
-                'bridge': ggpb.QIAO,
-                'qiao': ggpb.QIAO,
-                'garden': ggpb.HUAYUAN,
-                'huayuan': ggpb.HUAYUAN,
-                'gate': ggpb.MEN,
-                'men': ggpb.MEN,
-                'guan': ggpb.GUAN,
-                'hall': ggpb.DIAN,
-                'dian': ggpb.DIAN,
-                'kiosk': ggpb.TING,
-                'ting': ggpb.TING,
-                'lou': ggpb.LOU,
-                'palace': ggpb.GONG,
-                'gong': ggpb.GONG,
-                'pavilion': ggpb.GE,
-                'ge': ggpb.GE,
-                'tang': ggpb.TANG,
-                'xuan': ggpb.XUAN,
-                'zhai': ggpb.ZHAI
-            }.get(arch_type_string, ggpb.UNDEFINED_ARCH_TYPE)
-
-        def map_orientation(orientation_string):
-            return {
-                'north': ggpb.NORTH,
-                'south': ggpb.SOUTH,
-                'east': ggpb.EAST,
-                'west': ggpb.WEST
-            }.get(orientation_string, ggpb.UNDEFINED_ORIENTATION)
-
-        data_parsed = None
-        with open(self.DATA_PATH, "r") as fd:
-            data = fd.read()
-            data_parsed = json.loads(data)
-
-        if data_parsed is None:
-            raise Exception("Data Parsing Error!!")
-
-        places = data_parsed['places']
-        for place in places:
-            p = ggpb.Place(name=place['name'])
-            if place.get('arch_type'):
-                p.arch_type = map_arch_type(place['arch_type'])
-
-            if place.get('orientation'):
-                p.orientation = map_orientation(place['orientation'])
-
-            self.places.append(p)
-
-        empires = data_parsed['empires']
-        for empire in empires:
-            emp = ggpb.Empire(name=empire['name'])
-
-            if empire.get('epoch_name'):
-                emp.epoch_name = empire['epoch_name']
-
-            if empire.get('temple_name'):
-                emp.temple_name = empire['temple_name']
-
-            self.empires.append(emp)
+        self.places = get_places()
+        self.empires = get_empires()
 
     def _get_arch_type(self, arch_type):
         rets = []
