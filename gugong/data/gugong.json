@@ -27,168 +27,168 @@
         {
             "name": "朱棣",
             "temple_name": "明成祖",
-            "on_position_years": 22,
+            "years_in_position": 22,
             "dynasty": "MING",
             "epoch_name": "永乐"
         },
         {
             "name": "朱高炽",
             "temple_name": "明仁宗",
-            "on_position_years": 1,
+            "years_in_position": 1,
             "dynasty": "MING",
             "epoch_name": "洪熙"
         },
         {
             "name": "朱瞻基",
             "temple_name": "明宣宗",
-            "on_position_years": 10,
+            "years_in_position": 10,
             "dynasty": "MING",
             "epoch_name": "宣德"
         },
         {
             "name": "朱祁镇",
             "temple_name": "明英宗",
-            "on_position_years": 14,
+            "years_in_position": 14,
             "dynasty": "MING",
             "epoch_name": "正统"
         },
         {
             "name": "朱祁钰",
             "temple_name": "明景帝",
-            "on_position_years": 8,
+            "years_in_position": 8,
             "dynasty": "MING",
             "epoch_name": "景泰"
         },
         {
             "name": "朱见深",
             "temple_name": "明宪宗",
-            "on_position_years": 23,
+            "years_in_position": 23,
             "dynasty": "MING",
             "epoch_name": "成化"
         },
         {
             "name": "朱佑樘",
             "temple_name": "明孝宗",
-            "on_position_years": 18,
+            "years_in_position": 18,
             "dynasty": "MING",
             "epoch_name": "弘治"
         },
         {
             "name": "朱厚照",
             "temple_name": "明武宗",
-            "on_position_years": 16,
+            "years_in_position": 16,
             "dynasty": "MING",
             "epoch_name": "正德"
         },
         {
             "name": "朱厚熜",
             "temple_name": "明世宗",
-            "on_position_years": 45,
+            "years_in_position": 45,
             "dynasty": "MING",
             "epoch_name": "嘉靖"
         },
         {
             "name": "朱载垕",
             "temple_name": "明穆宗",
-            "on_position_years": 6,
+            "years_in_position": 6,
             "dynasty": "MING",
             "epoch_name": "隆庆"
         },
         {
             "name": "朱翊钧",
             "temple_name": "明神宗",
-            "on_position_years": 48,
+            "years_in_position": 48,
             "dynasty": "MING",
             "epoch_name": "万历"
         },
         {
             "name": "朱常洛",
             "temple_name": "明光宗",
-            "on_position_years": 1,
+            "years_in_position": 1,
             "dynasty": "MING",
             "epoch_name": "泰昌"
         },
         {
             "name": "朱由校",
             "temple_name": "明熹宗",
-            "on_position_years": 7,
+            "years_in_position": 7,
             "dynasty": "MING",
             "epoch_name": "天启"
         },
         {
             "name": "朱由检",
             "temple_name": "明思宗",
-            "on_position_years": 17,
+            "years_in_position": 17,
             "dynasty": "MING",
             "epoch_name": "崇祯"
         },
         {
             "name": "爱新觉罗·福临",
             "temple_name": "清世祖",
-            "on_position_years": 18,
+            "years_in_position": 18,
             "dynasty": "QING",
             "epoch_name": "福临"
         },
         {
             "name": "爱新觉罗·玄烨",
             "temple_name": "清圣祖",
-            "on_position_years": 61,
+            "years_in_position": 61,
             "dynasty": "QING",
             "epoch_name": "康熙"
         },
         {
             "name": "爱新觉罗·胤禛",
             "temple_name": "清世宗",
-            "on_position_years": 13,
+            "years_in_position": 13,
             "dynasty": "QING",
             "epoch_name": "雍正"
         },
         {
             "name": "爱新觉罗·弘历",
             "temple_name": "清高宗",
-            "on_position_years": 60,
+            "years_in_position": 60,
             "dynasty": "QING",
             "epoch_name": "乾隆"
         },
         {
             "name": "爱新觉罗·顒琰",
             "temple_name": "清仁宗",
-            "on_position_years": 25,
+            "years_in_position": 25,
             "dynasty": "QING",
             "epoch_name": "嘉庆"
         },
         {
             "name": "爱新觉罗·旻宁",
             "temple_name": "清宣宗",
-            "on_position_years": 30,
+            "years_in_position": 30,
             "dynasty": "QING",
             "epoch_name": "道光"
         },
         {
             "name": "爱新觉罗·奕詝",
             "temple_name": "清文宗",
-            "on_position_years": 11,
+            "years_in_position": 11,
             "dynasty": "QING",
             "epoch_name": "咸丰"
         },
         {
             "name": "爱新觉罗·载淳",
             "temple_name": "清穆宗",
-            "on_position_years": 14,
+            "years_in_position": 14,
             "dynasty": "QING",
             "epoch_name": "同治"
         },
         {
             "name": "爱新觉罗·载湉",
             "temple_name": "清德宗",
-            "on_position_years": 34,
+            "years_in_position": 34,
             "dynasty": "QING",
             "epoch_name": "光绪"
         },
         {
             "name": "爱新觉罗·溥仪",
             "temple_name": "清宣统皇帝",
-            "on_position_years": 3,
+            "years_in_position": 3,
             "dynasty": "QING",
             "epoch_name": "宣统"
         }
